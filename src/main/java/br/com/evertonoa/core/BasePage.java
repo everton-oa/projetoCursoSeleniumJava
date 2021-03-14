@@ -29,7 +29,7 @@ public class BasePage {
 
 	/* Radio e Check */
 
-	public void clickarRadio(String id) {
+	public void clicarRadio(String id) {
 		getDriver().findElement(By.id(id)).click();
 	}
 
@@ -104,6 +104,12 @@ public class BasePage {
 	public void clickarBotao(String id) {
 		clicarBotao(By.id(id));
 	}
+	
+	public void clickarBotaoPorTexto(String texto) {
+		clicarBotao(By.xpath("//button[.='"+texto+"']"));
+	}
+	
+	
 	
 	public Object obterValueElemento(String id) {
 		return getDriver().findElement(By.id(id)).getAttribute("value");

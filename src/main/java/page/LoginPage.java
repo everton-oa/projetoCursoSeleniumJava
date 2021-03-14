@@ -2,8 +2,6 @@ package page;
 
 import static br.com.evertonoa.core.driverFactory.getDriver;
 
-import org.openqa.selenium.By;
-
 import br.com.evertonoa.core.BasePage;
 
 public class LoginPage extends BasePage {
@@ -20,7 +18,7 @@ public class LoginPage extends BasePage {
 	}
 	
 	public void clicarBotaoEntrar() {
-		clicarBotao(By.xpath("//button[.='Entrar']"));
+		clickarBotaoPorTexto("Entrar");
 	}
 	
 	public void fazerLogin(String email, String senha) {

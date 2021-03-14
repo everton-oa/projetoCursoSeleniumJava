@@ -11,7 +11,7 @@ public class ContasPage extends BasePage {
 	}
 
 	public void clicarBotaoSalvar() {
-		clicarBotao(By.xpath("//button[.='Salvar']"));
+		clickarBotaoPorTexto("Salvar");
 	}
 	
 	public String obterMensagemSucesso() {
