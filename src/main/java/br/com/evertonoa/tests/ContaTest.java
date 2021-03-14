@@ -1,12 +1,12 @@
-package tests;
+package br.com.evertonoa.tests;
 
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
 import br.com.evertonoa.core.BaseTest;
-import page.ContasPage;
-import page.MenuPage;
+import br.com.evertonoa.pages.ContasPage;
+import br.com.evertonoa.pages.MenuPage;
 
 public class ContaTest extends BaseTest {
 

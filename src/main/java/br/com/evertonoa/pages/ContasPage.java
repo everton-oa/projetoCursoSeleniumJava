@@ -1,4 +1,4 @@
-package page;
+package br.com.evertonoa.pages;
 
 import org.openqa.selenium.By;
 

@@ -1,4 +1,4 @@
-package page;
+package br.com.evertonoa.pages;
 
 import br.com.evertonoa.core.BasePage;
 

@@ -1,4 +1,4 @@
-package page;
+package br.com.evertonoa.pages;
 
 import static br.com.evertonoa.core.driverFactory.getDriver;
 

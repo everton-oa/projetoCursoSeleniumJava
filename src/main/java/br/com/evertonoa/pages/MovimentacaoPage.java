@@ -1,4 +1,4 @@
-package page;
+package br.com.evertonoa.pages;
 
 import java.util.ArrayList;
 import java.util.List;

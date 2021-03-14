@@ -7,7 +7,7 @@ import org.junit.Before;
 import org.junit.Rule;
 import org.junit.rules.TestName;
 
-import page.LoginPage;
+import br.com.evertonoa.pages.LoginPage;
 
 public class BaseTest {
 	
