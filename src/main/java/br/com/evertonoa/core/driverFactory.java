@@ -20,7 +20,8 @@ public class driverFactory {
 		return driver;
 	}
 	
-	public static void killDriver() {
+	public static void killDriver() throws InterruptedException {
+		Thread.sleep(2000);
 		if (driver != null) {
 			driver.quit();
 			driver = null;
