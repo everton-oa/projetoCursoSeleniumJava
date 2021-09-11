@@ -10,29 +10,22 @@ import org.junit.rules.TestName;
 import br.com.evertonoa.pages.LoginPage;
 
 public class BaseTest {
-	
+
 	private LoginPage page = new LoginPage();
-	
+
 	@Rule
 	public TestName testName = new TestName();
-	
+
 	@Before
 	public void inicializa() {
 		page.acessarTelaInicial();
-		
-		page.fazerLogin("usuario@user.com", "123");
-		
+
+		page.fazerLogin("everton@everton.com", "123456");
 	}
-	
-	
+
 	@After
 	public void tearDown() {
-		
-//		TakesScreenshot ss = (TakesScreenshot) getDriver();
-//		File arquivo = ss.getScreenshotAs(OutputType.FILE);
-//		Fileutils
-		
-		if (Propriedades.FECHAR_BROUSER) {
+		if (Propriedades.FECHAR_BROWSER) {
 			killDriver();
 		}
 	}

@@ -28,7 +28,7 @@ public class MovimentacaoTest extends BaseTest {
 		movPage.setDescricao("Descriçao do movimento");
 		movPage.setInteressado("Interessado");
 		movPage.setValor("100");
-		movPage.setConta("Conta Alterada");
+		movPage.setConta("Conta para movimentacoes");
 		movPage.setSituacaoPago();
 		movPage.clicarBotaoSalvar();
 		
@@ -60,13 +60,12 @@ public class MovimentacaoTest extends BaseTest {
 		movPage.setDescricao("Descriçao do movimento");
 		movPage.setInteressado("Interessado");
 		movPage.setValor("100");
-		movPage.setConta("Conta Alterada");
+		movPage.setConta("Conta para movimentacoes");
 		movPage.setSituacaoPago();
 		movPage.clicarBotaoSalvar();
 		
 		List<String> erros = movPage.obterErros();
 		assertTrue(erros.contains("Data da Movimentação deve ser menor ou igual à data atual"));
 		assertEquals(1, erros.size());
-		
 	}
 }
