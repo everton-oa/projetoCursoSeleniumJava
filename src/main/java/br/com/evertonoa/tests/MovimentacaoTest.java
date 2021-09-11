@@ -1,5 +1,7 @@
 package br.com.evertonoa.tests;
 
+import static br.com.evertonoa.utils.DataUtils.obterDataComDiferençaDias;
+import static br.com.evertonoa.utils.DataUtils.obterDataFormatada;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
@@ -23,8 +25,8 @@ public class MovimentacaoTest extends BaseTest {
 	public void testInserirMovimentacao() {
 		menuPage.acessarTelaMovimentacao();
 		
-		movPage.setDataMovimentacao("01/01/2017");
-		movPage.setDataPagamento("01/01/2018");
+		movPage.setDataMovimentacao(obterDataFormatada(new Date()));
+		movPage.setDataPagamento(obterDataFormatada(new Date()));
 		movPage.setDescricao("Descriçao do movimento");
 		movPage.setInteressado("Interessado");
 		movPage.setValor("100");
@@ -53,7 +55,7 @@ public class MovimentacaoTest extends BaseTest {
 	public void testeInserirMovimentacaoDataFutura() {
 		menuPage.acessarTelaMovimentacao();
 		
-		Date dataFutura = DataUtils.obterDataComDiferençaDias(3);
+		Date dataFutura = obterDataComDiferençaDias(3);
 		
 		movPage.setDataMovimentacao(DataUtils.obterDataFormatada(dataFutura));
 		movPage.setDataPagamento(DataUtils.obterDataFormatada(dataFutura));
