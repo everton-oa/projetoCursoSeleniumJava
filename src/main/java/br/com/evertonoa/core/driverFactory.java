@@ -21,7 +21,7 @@ public class driverFactory {
 	}
 	
 	public static void killDriver() throws InterruptedException {
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		if (driver != null) {
 			driver.quit();
 			driver = null;
