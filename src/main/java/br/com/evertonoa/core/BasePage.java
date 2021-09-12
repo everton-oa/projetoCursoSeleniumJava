@@ -1,6 +1,6 @@
 package br.com.evertonoa.core;
 
-import static br.com.evertonoa.core.driverFactory.getDriver;
+import static br.com.evertonoa.core.DriverFactory.getDriver;
 
 import java.util.ArrayList;
 import java.util.List;

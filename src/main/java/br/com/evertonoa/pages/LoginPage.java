@@ -1,6 +1,6 @@
 package br.com.evertonoa.pages;
 
-import static br.com.evertonoa.core.driverFactory.getDriver;
+import static br.com.evertonoa.core.DriverFactory.getDriver;
 
 import br.com.evertonoa.core.BasePage;
 

@@ -7,7 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 import br.com.evertonoa.core.BasePage;
-import br.com.evertonoa.core.driverFactory;
+import br.com.evertonoa.core.DriverFactory;
 
 public class MovimentacaoPage extends BasePage {
 	
@@ -48,7 +48,7 @@ public class MovimentacaoPage extends BasePage {
 	}
 
 	public List<String> obterErros() {
-		List<WebElement> erros = driverFactory.getDriver().findElements(By.xpath("//div[@class='alert alert-danger']//li"));
+		List<WebElement> erros = DriverFactory.getDriver().findElements(By.xpath("//div[@class='alert alert-danger']//li"));
 		List<String> retorno = new ArrayList<String>();
 		for (WebElement erro: erros) {
 			retorno.add(erro.getText());
