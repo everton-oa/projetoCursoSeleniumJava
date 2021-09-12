@@ -5,11 +5,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class DriverFactory {
-	
+
 	public static WebDriver driver;
-	
+
 	private DriverFactory() {}
-	
+
 	public static WebDriver getDriver() {
 		if (driver == null) {
 			switch (Propriedades.browser) {
@@ -19,9 +19,8 @@ public class DriverFactory {
 		}
 		return driver;
 	}
-	
-	public static void killDriver() throws InterruptedException {
-		Thread.sleep(1000);
+
+	public static void killDriver() {
 		if (driver != null) {
 			driver.quit();
 			driver = null;

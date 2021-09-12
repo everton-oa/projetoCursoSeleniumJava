@@ -31,7 +31,7 @@ public class SuiteGeral {
     }
 
     @AfterClass
-    public static void finaliza() throws InterruptedException {
+    public static void finaliza() {
         DriverFactory.killDriver();
     }
 }
